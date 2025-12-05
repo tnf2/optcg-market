@@ -1,89 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>One Piece TCG Marketplace | Discord Community & Free Middleman</title>
+    <meta name="description" content="The premier One Piece TCG Discord Marketplace. Buy, sell, and trade OPTCG cards with 0% fees. Free middleman service until 2026. Join the safest alternative to eBay/TCGPlayer.">
+    <meta name="keywords" content="One Piece TCG, OPTCG, Discord Marketplace, Buy One Piece Cards, Sell One Piece Cards, Free Middleman, No Fee Marketplace, Luffy, Ace, Shanks, TCG Trading">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://optcg.market/">
 
-  <!-- Explicitly ALLOW indexing -->
-  <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://optcg.market/">
+    <meta property="og:title" content="OPTCG Market - The No-Fee Trading Community">
+    <meta property="og:description" content="Stop paying 13% fees on eBay. Join the dedicated One Piece TCG Discord marketplace with FREE middleman services.">
+    <meta property="og:image" content="https://media.discordapp.net/attachments/1446284137634988094/1446307519940263946/ace.jpeg?ex=69338257&is=693230d7&hm=beb0182f07f9e815d23bd84f6757ab5d7b631c672c6e0c3476b7e283b7c00c41&=&format=webp&width=1837&height=1148">
 
-  <title>One Piece TCG Marketplace Discord | Buy, Sell, Trade & Price Check OP TCG Cards</title>
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://optcg.market/">
+    <meta property="twitter:title" content="One Piece TCG Discord Marketplace">
+    <meta property="twitter:description" content="Buy, Sell, and Trade One Piece cards with zero seller fees.">
+    <meta property="twitter:image" content="https://media.discordapp.net/attachments/1446284137634988094/1446307519940263946/ace.jpeg?ex=69338257&is=693230d7&hm=beb0182f07f9e815d23bd84f6757ab5d7b631c672c6e0c3476b7e283b7c00c41&=&format=webp&width=1837&height=1148">
 
-  <meta name="description" content="Join the One Piece TCG Marketplace Discord hosted at optcg.market. Buy, sell, trade, and price-check One Piece TCG cards with active traders, verified sellers, and real-time market discussion." />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "OPTCG Market",
+      "url": "https://optcg.market",
+      "logo": "https://media.discordapp.net/attachments/1446284137634988094/1446307519940263946/ace.jpeg?ex=69338257&is=693230d7&hm=beb0182f07f9e815d23bd84f6757ab5d7b631c672c6e0c3476b7e283b7c00c41&=&format=webp&width=1837&height=1148",
+      "description": "A dedicated Discord marketplace for buying, selling, and trading One Piece TCG cards with no platform fees.",
+      "potentialAction": {
+        "@type": "JoinAction",
+        "target": "https://discord.gg/optcg-market"
+      }
+    }
+    </script>
 
-  <meta name="keywords" content="One Piece TCG marketplace, One Piece TCG Discord, OP TCG marketplace, one piece card game trades, one piece tcg buy sell trade, one piece tcg discord server, one piece tcg cards for sale, op tcg price check, op tcg trading, buy one piece tcg cards, sell one piece tcg cards, one piece tcg market discord, optcg market" />
+    <style>
+        :root {
+            --primary: #FF4500; /* Ace Orange/Red */
+            --primary-hover: #ff6a33;
+            --dark-bg: #0f0f0f;
+            --text-light: #f5f5f5;
+            --glass: rgba(0, 0, 0, 0.75);
+        }
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="One Piece TCG Marketplace Discord | OPTCG Market" />
-  <meta property="og:description" content="The OPTCG Market Discord: Buy, sell, trade and price-check One Piece TCG cards with a trusted community." />
-  <meta property="og:image" content="https://media.discordapp.net/attachments/1446284137634988094/1446307519940263946/ace.jpeg?ex=69338257&is=693230d7&hm=beb0182f07f9e815d23bd84f6757ab5d7b631c672c6e0c3476b7e283b7c00c41&=&format=webp&width=1837&height=1148" />
-  <meta property="og:url" content="https://optcg.market" />
-  <meta property="og:type" content="website" />
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="One Piece TCG Marketplace Discord | OPTCG Market" />
-  <meta name="twitter:description" content="Join the OPTCG Market One Piece TCG Discord to buy, sell, trade, and price-check OP TCG cards." />
-  <meta name="twitter:image" content="https://media.discordapp.net/attachments/1446284137634988094/1446307519940263946/ace.jpeg?ex=69338257&is=693230d7&hm=beb0182f07f9e815d23bd84f6757ab5d7b631c672c6e0c3476b7e283b7c00c41&=&format=webp&width=1837&height=1148" />
+        body, html {
+            height: 100%;
+            width: 100%;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            scroll-behavior: smooth;
+        }
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Community",
-    "name": "OPTCG Market - One Piece TCG Marketplace Discord",
-    "url": "https://optcg.market",
-    "description": "A high-activity Discord community for One Piece TCG players and collectors to buy, sell, trade, and price-check cards.",
-    "keywords": "One Piece TCG Marketplace, OP TCG Buy Sell Trade, One Piece Card Game Trading, OPTCG Market"
-  }
-  </script>
+        /* BACKGROUND HANDLING */
+        .bg-image {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            /* Using the provided URL */
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        
+        /* Dark overlay so text is readable */
+        .overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+            z-index: 0;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* TYPOGRAPHY */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        
+        .highlight { color: var(--primary); }
+
+        p.subtitle {
+            font-size: 1.3rem;
+            color: #dcdcdc;
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        /* CTA BUTTON */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.4);
+            border: 2px solid transparent;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            background-color: var(--primary-hover);
+            box-shadow: 0 0 30px rgba(255, 69, 0, 0.7);
+        }
+
+        .cta-button:active { transform: translateY(1px); }
+
+        /* FEATURES GRID (SEO TEXT) */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 4rem;
+            width: 100%;
+        }
+
+        .feature-card {
+            background: var(--glass);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+            text-align: left;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+        footer {
+            margin-top: 4rem;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        /* MOBILE TWEAKS */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            p.subtitle { font-size: 1.1rem; }
+            .cta-button { width: 100%; padding: 15px 0; }
+        }
+    </style>
 </head>
-
 <body>
 
-  <h1>OPTCG Market – One Piece TCG Marketplace Discord</h1>
+    <div class="bg-image"></div>
+    <div class="overlay"></div>
 
-  <p>
-    Welcome to <strong>OPTCG Market</strong>, the dedicated
-    <strong>One Piece TCG marketplace Discord</strong> hosted at <strong>optcg.market</strong>.
-    This is a focused community for <strong>buying, selling, trading, and price-checking One Piece TCG cards</strong>,
-    including OP01, OP02, OP03, OP04, promos, alt arts, and graded cards.
-  </p>
+    <div class="container">
+        
+        <h1>The Ultimate <br><span class="highlight">One Piece TCG</span> Market</h1>
+        
+        <p class="subtitle">
+            The exclusive Discord community for serious collectors and players. 
+            Buy, Sell, and Trade directly with <strong>0% fees</strong>.
+        </p>
 
-  <h2>Why Join the OPTCG Market Discord?</h2>
-  <ul>
-    <li>✓ Active <strong>buy/sell/trade</strong> channels for One Piece TCG</li>
-    <li>✓ <strong>Price-check</strong> help for OP TCG singles, decks, and sealed product</li>
-    <li>✓ <strong>Verified sellers</strong> and trusted traders to reduce scams</li>
-    <li>✓ Daily marketplace activity with collectors and competitive players</li>
-    <li>✓ Focused on <strong>One Piece TCG</strong> only – not buried inside a generic TCG server</li>
-  </ul>
+        <a href="https://discord.gg/optcg-market" class="cta-button">
+            JOIN DISCORD MARKETPLACE
+        </a>
 
-  <h2>Search Terms We Target</h2>
-  <p>
-    OPTCG Market is designed to be the answer when players search for:
-    <strong>One Piece TCG marketplace Discord</strong>,
-    <strong>OP TCG buy sell trade</strong>,
-    <strong>One Piece card market Discord</strong>,
-    <strong>One Piece TCG trading server</strong>, and
-    <strong>One Piece TCG price check Discord</strong>.
-  </p>
+        <div class="features">
+            <div class="feature-card">
+                <h3>🔒 Secure Middleman</h3>
+                <p>We offer <strong>Free Middleman Services until 2026</strong>. Our trusted moderation team ensures your high-value trades (Manga Rares, Signed Cards) are safe.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💰 Best Prices Guaranteed</h3>
+                <p>Sellers save 13% on eBay/TCGPlayer fees, meaning buyers get lower prices. It's the only <strong>true no-fee marketplace</strong> for OPTCG.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔥 Active Community</h3>
+                <p>Join thousands of players discussing the meta, showcasing collections, and trading decks. From OP-01 to the latest set.</p>
+            </div>
+        </div>
 
-  <p><strong>Redirecting you to the One Piece TCG Marketplace Discord…</strong><br>
-  If you are not redirected automatically, <a href="https://discord.gg/optcg-market">click here to join the OPTCG Market Discord</a>.</p>
+        <footer>
+            <p>&copy; 2024-2025 OPTCG.Market. Not affiliated with Bandai or One Piece.</p>
+        </footer>
 
-  <script>
-    (function () {
-      const ua = navigator.userAgent.toLowerCase();
-      const isBot = /googlebot|bingbot|slurp|duckduckbot|baiduspider|yandex|sogou|facebookexternalhit|twitterbot|discordbot/.test(ua);
-
-      // Only redirect real users, not crawlers
-      if (!isBot) {
-        setTimeout(function () {
-          window.location.href = "https://discord.gg/optcg-market";
-        }, 2000);
-      }
-    })();
-  </script>
+    </div>
 
 </body>
 </html>
