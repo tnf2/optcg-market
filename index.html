@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+
+  <!-- Explicitly ALLOW indexing -->
+  <meta name="robots" content="index, follow">
+
   <title>One Piece TCG Marketplace Discord | Buy, Sell, Trade & Price Check OP TCG Cards</title>
 
   <meta name="description" content="Join the One Piece TCG Marketplace Discord hosted at optcg.market. Buy, sell, trade, and price-check One Piece TCG cards with active traders, verified sellers, and real-time market discussion." />
@@ -29,17 +33,9 @@
     "name": "OPTCG Market - One Piece TCG Marketplace Discord",
     "url": "https://optcg.market",
     "description": "A high-activity Discord community for One Piece TCG players and collectors to buy, sell, trade, and price-check cards.",
-    "keywords": "One Piece TCG Marketplace, OP TCG Buy Sell Trade, One Piece Card Game Trading, OPTCG Market",
-    "sameAs": [
-      "https://discord.gg/optcg-market",
-      "https://reddit.com/r/OnePieceTCG_Market/",
-      "https://twitter.com/_ccidental"
-    ]
+    "keywords": "One Piece TCG Marketplace, OP TCG Buy Sell Trade, One Piece Card Game Trading, OPTCG Market"
   }
   </script>
-
-  <!-- Delay redirect for SEO (2 seconds) -->
-  <meta http-equiv="refresh" content="2; url=https://discord.gg/optcg-market" />
 </head>
 
 <body>
@@ -76,11 +72,18 @@
   If you are not redirected automatically, <a href="https://discord.gg/optcg-market">click here to join the OPTCG Market Discord</a>.</p>
 
   <script>
-    setTimeout(() => {
-      window.location.href = "https://discord.gg/optcg-market";
-    }, 2000);
+    (function () {
+      const ua = navigator.userAgent.toLowerCase();
+      const isBot = /googlebot|bingbot|slurp|duckduckbot|baiduspider|yandex|sogou|facebookexternalhit|twitterbot|discordbot/.test(ua);
+
+      // Only redirect real users, not crawlers
+      if (!isBot) {
+        setTimeout(function () {
+          window.location.href = "https://discord.gg/optcg-market";
+        }, 2000);
+      }
+    })();
   </script>
 
 </body>
 </html>
-
