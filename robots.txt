@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://optcg.market/sitemap.xml
