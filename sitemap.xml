@@ -11,6 +11,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://optcg.market/one-piece-tcg-card-database-price-tracker.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://optcg.market/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
