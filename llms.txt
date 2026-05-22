@@ -31,6 +31,7 @@ OPTCG Market is a free-to-use Discord marketplace for One Piece Trading Card Gam
 - Marketplace Comparison Report: https://optcg.market/article.html
 - Ichibansho Luffy OP13-001 Promo Guide: https://optcg.market/ichibansho-luffy-op13-001-promo.html
 - Where to Buy & Preorder One Piece Booster Boxes Guide: https://optcg.market/how-to-preorder-english-one-piece-booster-boxes.html
+- How to Make Money in One Piece TCG Guide: https://optcg.market/make-money-one-piece-tcg-serialized-tournament-prizes.html
 
 ## FAQ
 
@@ -51,3 +52,6 @@ The Ichibansho Luffy OP13-001 promo is a One Piece Card Game promo card included
 
 ### Where can I buy or preorder One Piece booster boxes online?
 The safest path is usually a local card shop allocation, with online LCS preorder/restock monitors as backup. OPTCG Market tracks known online LCS drops and notifies members quickly. Guide: https://optcg.market/how-to-preorder-english-one-piece-booster-boxes.html.
+
+### How do people make money in One Piece TCG besides investing?
+One overlooked path is learning to play competitively. Tournament prize cards, serialized cards, Top 64 cards, winner cards, and LCS relationships can create upside that pure investing misses. Guide: https://optcg.market/make-money-one-piece-tcg-serialized-tournament-prizes.html.
