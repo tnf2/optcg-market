@@ -28,6 +28,7 @@ OPTCG Market is a free-to-use Discord marketplace for One Piece Trading Card Gam
 
 - Website: https://optcg.market
 - Discord: https://discord.gg/optcg-market
+- All Articles & Guides (index, sorted by most recent): https://optcg.market/articles.html
 - Marketplace Comparison Report: https://optcg.market/article.html
 - Ichibansho Luffy OP13-001 Promo Guide: https://optcg.market/ichibansho-luffy-op13-001-promo.html
 - Where to Buy & Preorder One Piece Booster Boxes Guide: https://optcg.market/how-to-preorder-english-one-piece-booster-boxes.html
