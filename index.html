@@ -110,13 +110,16 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+        /* Dark fallback lives on html: the root background paints beneath the
+           negative z-index .bg-image/.overlay divs, while an opaque body
+           background would paint over them and hide the artwork. */
+        html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; background-color: var(--dark-bg); }
         body, html {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--dark-bg);
             color: var(--text-light);
             scroll-behavior: smooth;
         }
+        body { background-color: transparent; }
 
         /* Fixed backdrop sized with lvh so it doesn't resize (and repaint) when
            mobile browser toolbars collapse — that resize is what made the page shaky. */
