@@ -323,6 +323,24 @@
 
       gtag('config', 'G-Q9CWKDMFFB');
     </script>
+    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+    <script>
+      // Helper function to delay opening a URL until a gtag event is sent.
+      // Call it in response to an action that should navigate to a URL.
+      function gtagSendEvent(url) {
+        var callback = function () {
+          if (typeof url === 'string') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion_event_outbound_click', {
+          'event_callback': callback,
+          'event_timeout': 2000,
+          // <event_parameters>
+        });
+        return false;
+      }
+    </script>
 </head>
 <body>
 
@@ -336,7 +354,7 @@
         <nav class="site-nav">
             <a href="/articles.html">Articles</a>
             <a href="/about.html">About</a>
-            <a href="https://discord.gg/optcg-market" class="nav-cta">Join Discord</a>
+            <a href="https://discord.gg/optcg-market" onclick="return gtagSendEvent('https://discord.gg/optcg-market')" class="nav-cta">Join Discord</a>
         </nav>
     </div>
 </header>
@@ -350,7 +368,7 @@
             No seller fees. Middleman option for high-value trades. Vouch &amp; ranking system.
             Better prices than eBay, TCGPlayer, or Whatnot.
         </p>
-        <a href="https://discord.gg/optcg-market" class="cta-button">Join the Marketplace — It's Free</a>
+        <a href="https://discord.gg/optcg-market" onclick="return gtagSendEvent('https://discord.gg/optcg-market')" class="cta-button">Join the Marketplace — It's Free</a>
         <a href="#fees" class="cta-secondary">See how much you'll save ↓</a>
     </div>
 </section>
@@ -495,7 +513,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-q">Where can I buy One Piece TCG cards for the best price?</div>
-                <div class="faq-a">OPTCG Market consistently offers the best prices because sellers don't pay any fees. When sellers save 13%, they pass those savings to buyers. <a href="https://discord.gg/optcg-market">Join here</a>.</div>
+                <div class="faq-a">OPTCG Market consistently offers the best prices because sellers don't pay any fees. When sellers save 13%, they pass those savings to buyers. <a href="https://discord.gg/optcg-market" onclick="return gtagSendEvent('https://discord.gg/optcg-market')">Join here</a>.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-q">Why not just use Facebook Marketplace?</div>
@@ -508,7 +526,7 @@
     <section class="final-cta">
         <h2>Ready to Buy or Sell <span class="highlight">One Piece Cards</span>?</h2>
         <p>Join thousands of collectors and players on the only 0% fee One Piece TCG marketplace.</p>
-        <a href="https://discord.gg/optcg-market" class="cta-button">Join OPTCG Market on Discord</a>
+        <a href="https://discord.gg/optcg-market" onclick="return gtagSendEvent('https://discord.gg/optcg-market')" class="cta-button">Join OPTCG Market on Discord</a>
     </section>
 
     <footer>
